@@ -4,26 +4,32 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Brenda</title>
-
+  
   <!-- Google Fonts -->
-  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;600&family=Roboto:wght@400&display=swap" rel="stylesheet">
-  <!-- Extra Fonts -->
-	<link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Montserrat+Alternates:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Cormorant+Infant:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&display=swap" rel="stylesheet">
-
-  <style>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Annie+Use+Your+Telescope&family=EB+Garamond:ital,wght@0,400;0,400..800;1,400;1,400..800&family=Mouse+Memoirs&display=swap" rel="stylesheet">
+ 
+  <script src="https://ajax.googleapis.com/ajax/libs/webfont/1.6.26/webfont.js"></script>
+    <script>
+        WebFont.load({
+            google: {
+                families: ['Annie Use Your Telescope', 'EB Garamond:ital,wght@0,400;0,400..800;1,400;1,400..800', 'Mouse Memoirs']
+            }
+        });
+    </script>
+ 
+ <style>
     /* Global Styles */
     body {
       margin: 0;
       padding: 0;
-      font-family: 'Roboto', sans-serif;
-      /* background-color: #F9F6F1; */
       background-color: #cdd3d9;
       color: #3C3C3C;
+      font-family: "EB Garamond", serif;
+      font-optical-sizing: auto;
+      font-weight: 400;
+      font-style: normal;
     }
 
     header {
@@ -34,18 +40,18 @@
     }
 
      h1 { 
-      font-optical-sizing: auto;
-          /* font-weight: 14; */
-          font-style: normal;
-          margin-bottom:15px;
-          font-family: "Montserrat Alternates", sans-serif;
-          font-size: 48px; 
-       margin: 0; 
+      font-optical-sizing: auto; 
+      font-style: normal;
+      margin-bottom:15px;
+      margin: 0; 
+      font-family: "Annie Use Your Telescope", sans-serif;
+      font-weight: 400;
+      font-style: normal;
      } 
 
      h2 {
-      font-family: "Cormorant Infant", serif;
-      font-weight: 600px;
+      font-family: "Mouse Memoirs", serif;
+      font-weight: 400;
       font-style: normal;
      }
 
@@ -73,11 +79,7 @@
       font-size: 18px;
       margin-bottom: 15px;
     }
-    p.center {
-      font-size: 18px;
-      margin-bottom: 15px;
-      text-align: center;
-    }
+
 
     .button {
       background-color: #8f8bc6;
@@ -86,7 +88,7 @@
       border: none;
       border-radius: 25px;
       cursor: pointer;
-      font-family: 'Poppins', sans-serif;
+      font-family: "Mouse Memoirs", sans-serif;
       font-weight: 600;
     }
 
@@ -97,7 +99,7 @@
     footer {
       text-align: center;
       padding: 20px;
-      background-color: #1B2A41;
+      background-color: #6f5d9b;
       color: #F9F6F1;
       position: relative;
       bottom: 0;
@@ -112,9 +114,10 @@
 
     .emoji {
       /* filter: grayscale(100%) ;  */
-      color: #1a416943; /* Make the original emoji invisible */
-      text-shadow:  0 0 0 rgba(151, 97, 212, 0.364), 1px 1px 2px rgba(151, 97, 212, 0.364); /* Color the emoji with a shadow overlay */           
+      /* color: #1a416943; /* Make the original emoji invisible */
+      /* text-shadow:  0 0 0 rgba(151, 97, 212, 0.364), 1px 1px 2px rgba(151, 97, 212, 0.364); Color the emoji with a shadow overlay            */ 
     }
+
     h2 .emoji{
       display:none;
       text-shadow:  0 0 0 #ffd7c4ad;       
@@ -122,9 +125,24 @@
     }
 
     .more {
-      color: purple; /* Highlight color */
+      /* color: purple; Highlight color */
       font-weight: bold; /* Optional: Emphasize */
     }
+
+    .container{
+      display:flex;
+      justify-content: center;
+    }
+
+
+    .commentary{
+      font-size:35;
+      text-align: right;
+      font-style: italic;
+      color: #6f5d9b;
+      }
+
+
 
 
     @media (max-width: 768px) {
@@ -136,19 +154,20 @@
         padding: 30px;
       }
     }
+
   </style>
 </head>
 <body>
 
   <!-- Header -->
   <header>
-    <h1>Hi, I'm Brenda</h1>
-    <nav>
+    <h1>Hello there, I'm Brenda 👋</h1>
+    <!-- <nav>
       <a href="#about">About</a>
       <a href="#experience">Experience</a>
       <a href="#personal">Personal Side</a>
       <a href="#contact">Contact</a>
-    </nav>
+    </nav> -->
   </header>
 
   <!-- About Section -->
@@ -157,53 +176,63 @@
     <p>Hi, I’m Brenda – a multidisciplinary problem solver with a passion for technology and teamwork.</p>
     <p>I’ve worn many hats throughout my career: Business Analyst, Scrum Master and Developer. I thrive at the intersection of tech, collaboration, and impact, helping teams deliver the right products to users and ensuring that technology makes life better, one solution at a time.</p>
     <p></p>
-    
     <!-- <p>Since much of my professional work is confidential, I can't showcase it in a portfolio-style format like designers often do. Instead, I use this space to share my personal side, what I love about my work, and what inspires me during my free time.</p> -->
-    <p>I love exploring how technology improves people’s lives and enables teams to work better together. I also enjoy learning continuously—be it through tech</p>
+    <p>I love exploring how technology improves people’s lives and enables teams to work better together.</p>
     <p>I believe in:</p>
-    <p><span class="emoji">✨</span> Empowering teams to work seamlessly together</p>
     <p><span class="emoji">✨</span> Understanding users’ needs to build meaningful products</p>
     <p><span class="emoji">✨</span> Using technology as a tool for progress</p>
+    <p><span class="emoji">✨</span> Empowering teams to work seamlessly together</p>
   </section>
 
   <!-- Experience Section -->
-  <section id="experience">
+  <section id="experience" class="mouse-memoirs-regular">
     <h2><span class="emoji">📈</span> Experience</h2>
     <p>I’ve worked for leading companies in media <span class="emoji">📺</span>, payments <span class="emoji">💳</span>, insurance <span class="emoji">☂️</span>, and AdTech among others.</p>
-    <p>In my career, I’ve grown from hands-on roles, building solutions from the ground up, to coaching and empowering teams to deliver great products.  I enjoy both: contributing directly and enabling others to excel in their roles, but always close to the action and ensure products meet real user needs, with absolutely marvelous documentation.</p>
+    <p>In my career, I’ve grown from hands-on roles, building solutions from the ground up, to coaching and empowering teams to deliver great products.  I enjoy both: contributing directly and enabling others to excel in their roles, but always close to the action ensuring products meet real user needs, with absolutely marvelous documentation.</p>
   </section>
 
    <!-- Academic Section -->
    <section id="academic">
     <h2><span class="emoji">📚</span> Academic</h2>
-    <p>My academic journey is just as diverse: from Editorial Publishing <span class="emoji">📚</span>  to Systems Analysis <span class="emoji">👩‍💻</span>, Educational Informatics <span class="emoji">👩‍🏫</span>, and Digital Audiovisual Communication <span class="emoji">📹</span>. This mix of disciplines fuels my creativity and helps me bring unique perspectives to the teams I collaborate with.
-      I still continue to study on fields as Data and 3D art.</p>
+    <p>My academic journey is a little diverse: from Editorial Publishing <span class="emoji">📚</span>Educational Informatics <span class="emoji">👩‍🏫</span> and Digital Audiovisual Communication <span class="emoji">📹</span>. This mix of disciplines fuels my creativity and helps me bring unique perspectives to the teams I collaborate with.
+      I'm a student for life, currently interested in fields like Data and 3D art.</p>
   </section>
 
    <!-- Agile Side Section -->
    <section id="agile">
     <h2><span class="emoji">🔄</span> Agile</h2>
     <p>As a Scrum Master, I’m not just a facilitator; I’m a champion of the Agile Manifesto principles. This foundational framework guides my approach to teamwork, encouraging adaptability and collaboration. Here are the four key values that inspire my work:</p>
-    <p class="center">
-      <span class="emoji">🤝</span>
-      <span class="more">Individuals and Interactions</span>
+    
+    <p>
+      <span class="more">Individuals and Interactions</span> 
+      over Processes and Tools 
     </p>
-    <hr>
-    <p class="center">
-      Processes and Tools
-      <span class="emoji">🛠️</span>
+    <p class="commentary">
+      Remember, individuals and interactions drive success, but that doesn't mean tools are irrelevant.
     </p>
-     
-    <p class="center">
-      <span class="emoji">🕹️</span>
-      <span class="more">Working Software</span>
-      <hr> 
-      <p class="center">Comprehensive Documentation<span class="emoji">📜</span> </p>
-    <p class="center">
-      <span class="emoji">🤝</span>
-      Customer Collaboration </p><hr> <p class="center">Contract Negotiation </p>
-  
-    <p class="center"><span class="emoji">🔀</span>Responding to Change <hr><p class="center">Following a Plan<span class="emoji">⬆️</span> </p> </p>
+    <p>
+      <span class="more">Working Software</span> 
+      over Comprehensive Documentation
+    </p>
+    <p class="commentary">
+      So we're not too worried about story points, but documentation still matters—keep the target audience in mind.
+    </p>
+    <p>
+      <span class="more">Customer Collaboration</span>
+       over Contract Negotiation 
+    </p> 
+    <p class="commentary">
+      So we're not too worried about story points, but documentation still matters—keep the target audience in mind.
+    </p>
+    <p>
+      <span class="more">Responding to Change </span> 
+       over Following a Plan 
+    </p>
+      <p class="commentary">
+        Collaboration is key, but contracts still serve as a framework for expectations.
+      </p>
+    </div>
+    
   
   </section>
 
